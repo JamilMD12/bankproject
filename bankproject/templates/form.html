@@ -1,0 +1,61 @@
+<body>
+<form method="POST">
+  {% csrf_token %}
+
+
+
+  <label>Name</label>  <input type="text" name="Username" placeholder="Enter the username"><br>
+  <label>DOB</label>  <input type="date" name="dob" placeholder="Enter the dob"><br>
+
+    <label>Age</label>  <input type="number" name="Age" placeholder="Enter the age"><br>
+
+    <label>Gender</label>
+    <input type="radio" id="Male" name="Gender" value="male">
+<label for="Male">Male</label>
+<input type="radio" id="Female" name="Gender" value="female">
+<label for="Female">Female</label><br>
+     <label>Phone No.</label>  <input type="number" name="phoneno" placeholder="Enter the Phone Number"><br>
+
+    <label>E-mail</label>  <input type="email" name="email" placeholder="Enter the mail ID"><br>
+
+     <label>Address</label>  <input type="text" name="dob" placeholder="Enter the address"><br>
+ <br>
+
+
+    <div class="category_div" id="category_div">District
+        <select id="district" name="district" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+        <option value="">Select District</option>
+        <option value="kochi">KOCHI</option>
+        <option value="trivandrum">TRIVANDRUM</option>
+            <option value="kollam">KOLLAM</option>
+            <option value="kannur">KANNUR</option>
+            <option value="wayanad">WAYANAD</option>
+        </select>
+    </div>
+<!--    <div class="sub_category_div" id="sub_category_div">Branch-->
+<!--        <script type="text/javascript" language="JavaScript">-->
+<!--        document.write('<select name="branch" id="branch"><option value="">Select Branch</option></select>')-->
+<!--        </script>-->
+<!--       <noscript>-->
+<!--                <select name="sub-category" id="sub-category" >-->
+<!--                    <option value="">Please select branch</option>-->
+<!--                </select>-->
+<!--            </noscript>-->
+
+
+    <label>Account Type</label>
+     <select name="accounttype" id="acounttype">
+    <option value="Savings">Savings</option>
+     <option value="Salary">Salary</option>
+         <option value="Current">Current</option></select><br>
+         <input type="checkbox" id="cheque" name="material" value="material">
+            <label for="cheque">Chequebook</label>
+            <input type="checkbox" id="debitcard" name="material" value="material">
+            <label for="debitcard">Debit card</label>
+            <input type="checkbox" id="creditcard" name="material" value="material">
+            <label for="creditcard">CreditCard</label><br>
+       <button type="submit" formaction="submit">Submit</button>
+  <button type="submit">Logout</button>
+
+</form>
+</body>

@@ -1,0 +1,10 @@
+{% block body %}
+<form method="POST">
+  {% csrf_token %}
+        {{f.as_p}}
+  <input type="text" name="username" placeholder="Enter the username"><br>
+   <input type="Password" name="password" placeholder="Enter the password"><br>
+     <input type="Password" name="password1" placeholder="Enter the confirm password"><br>
+     <button type="submit">Confirm</button>
+</form>
+{% endblock %}

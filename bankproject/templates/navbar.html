@@ -1,0 +1,14 @@
+    <script>
+            $(document).ready(function () {
+            var option = document.getElementById("status").options;
+            if (document.getElementById('source').value == "kochi") {
+                $("#status").append('<option>Kalamassery</option>');
+                $("#status").append('<option>Aluva</option>');
+                }
+            if (document.getElementById('source').value == "ONLINE") {
+                $("#status").append('<option>OPEN</option>');
+                $("#status").append('<option>DELIVERED</option>');
+                $("#status").append('<option>SHIPPED</option>');
+                }
+            });
+            </script>

@@ -1,0 +1,8 @@
+
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <p>Application Accepted</p>
+    <input type="submit" formaction="/">
+</form>
+{% endblock %}

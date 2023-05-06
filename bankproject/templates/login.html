@@ -1,0 +1,14 @@
+{% block body %}
+<form action="login" method="post">
+  {% csrf_token %}
+  <input type="text" name="username" placeholder="Enter the username"><br>
+
+   <input type="Password" name="password" placeholder="Enter the password"><br>
+
+    <button type="submit" formaction="new">Submit</button>
+  <button type="submit" formaction="register/">Register</button>
+</form>
+
+
+
+{% endblock %}
